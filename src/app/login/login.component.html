@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="/scripts/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/general.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link rel="shortcut icon" href="/images/favicon.ico?x49499" type="image/x-icon">
+    <title>Autotrac Launcher Manager</title>
+</head>
+
+<body>
+    <header class="header-page">
+        <figure class="logo-figure">
+            <img src="/images/logo_autotrac.png" alt="Logo Autotrac">
+            <figcaption class="logo-name">Autotrac Launcher Manager</figcaption>
+        </figure>
+    </header>
+    <main class="main-page">
+        <div class="container tam">
+            <div class="jumbotron text-center">
+                <div class="form-horizontal"></div>
+                <div class="row">
+                    <div class="col-lg-6 linhaLateral">
+                        <h2>Entrar</h2>
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <div class="validation-summary-valid text-danger" data-valmsg-summary="true">
+                                    <ul>
+                                        <li style="display:none"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="UserName">Usu&#225;rio</label>
+                            <div class="col-md-10">
+                                <input class="form-control" data-val="true" data-val-required="The Usuário field is required." id="username" name="UserName" placeholder="" type="text" value="" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="Password">Senha</label>
+                            <div class="col-md-10">
+                                <input class="form-control" data-val="true" data-val-required="The Senha field is required." id="password" name="Password" placeholder="" type="password" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <input class="btn btn-primary" id="btnEnter" type="submit" onclick="validateLogin( );" value="Entrar" />
+                                <span class="obsNaoConsigoEntrar"><a href="/sacacesso/Home/EsqueciMinhaSenha">N&#227;o consigo entrar</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2>Não sou cadastrado</h2>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <span>Se você ainda não é cadastrado, clique abaixo em cadastrar e solicite o seu cadastramento.</span>
+                            </div>
+                        </div>
+                        <div class="form-group text-center">
+                            <div class="col-md-12">
+                                <input class="botaoCadastrar" type="button" onclick="window.location='/register.html'" value="Cadastrar" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-page">
+        <a href="#" class="text-footer-page">Voltar ao topo</a>
+    </footer>
+</body>
+
+</html>
